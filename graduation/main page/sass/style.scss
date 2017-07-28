@@ -1,0 +1,114 @@
+$myWidthHeight: 100%;
+$myColor: #53B778;
+$transition: all .5s ease;
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	width: $myWidthHeight;
+	height:($myWidthHeight/5);
+	background: white;
+	font-size: 1.2em;
+
+	.container {
+		padding: 0 20px;
+	}
+
+	.headerSearch {
+		padding: 10px 0;
+
+
+		input {
+			border: none;
+			outline: none;
+		}
+
+	}
+
+	.headerPhone {
+		padding-left: 20px;
+		@media screen and (min-width: 767px){
+   			 	float: right;
+		}
+
+		@media screen and (max-width: 767px){
+   			 	float: left;
+		}
+
+		a {
+			color: #606473;
+			&:hover {
+				text-decoration: none;
+				color: $myColor;
+			}
+		}
+
+		img {
+			padding: 0 20px;
+		}
+	}
+
+	.navbarSection {
+		@media screen and (min-width: 767px) and (max-width: 992px){
+			ul li {
+				font-size: 0.9em;
+				padding-left: 15px;
+			}
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px){
+			ul li {
+				padding-left: 30px;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			ul li {
+				padding-left: 50px;
+			}
+		}
+		width: $myWidthHeight;
+		padding: 30px 0;
+
+		ul {
+			li {
+				display: inline-block;
+				
+				&:hover {
+
+				}
+				a {
+					padding: 15px 0 10px 0;
+					border-bottom: 0px solid $myColor;
+					color: #606473;
+					transition: $transition;
+
+					&:hover {
+						background: none;
+						color: #7D7D7D;
+						border-bottom: 2px solid $myColor;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+	}
+
+	
+}
