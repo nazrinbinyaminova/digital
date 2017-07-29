@@ -20,7 +20,7 @@ $(document).ready(function() {
 $(document).ready(function(){
 	$(".topBtn").click(function(){
 		$("body").animate({
-			scrollTop: 0,
-		}, 2000);
+			scrollTop:0
+		},1000);
 	});
 })
