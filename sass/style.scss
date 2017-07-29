@@ -5,7 +5,6 @@ $transition: all .3s ease;
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-
 }
 #header {
 	width: 100%;
@@ -18,8 +17,6 @@ body {
 
 	.headerSearch {
 		padding: 10px 0;
-
-
 		input {
 			border: none;
 			outline: none;
@@ -103,6 +100,9 @@ body {
 					border-bottom: 0px solid $myColor;
 					color: #606473;
 					transition: $transition;
+					.active {
+						border-bottom: 2px solid $myColor;
+					}
 
 					&:hover {
 						background: none;
@@ -169,37 +169,414 @@ body {
 
 #blog {
 	width: 100%;
-	height: 100px;
+	height: 150px;
 	background: #323A45;
+	color: white;
+
+	h1 {
+		@media screen and (min-width: 767px) and (max-width: 992px) {
+		    font-size: 2em;
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px) {
+		    font-size: 3em;  
+		}
+		@media screen and (min-width: 1200px) {
+		   font-size: 4em;		 
+		}
+
+		font-weight: bold;
+		line-height: 150px;
+		margin: 0;
+		padding-left: 5px;
+	}
+}
+
+#mediaGallery {
+	width: 100%;
+	background: white;
+	padding: 60px 0;
+
+	.mediaGalleryLeft {
+		.mediaGalleryLeftItem {
+			a {
+				color: #323A45;
+				transition: $transition;
+				&:hover {
+					text-decoration: none;
+					color: $myColor;
+				}
+				h2 {
+					font-weight: bold;
+				}
+			}
+			
+			ul {
+				padding: 0;
+				margin: 0;
+				border-top: 1px solid lightgray;
+				li {
+					list-style: none;
+					display: inline-block;
+					margin-right: 20px;
+					a {
+						color: gray;
+						font-size: 0.9em;
+						letter-spacing: 1px;
+						text-decoration: none;
+						&:hover {
+							color: $myColor;
+						}
+					}
+				}
+			}
+			.galleryImg {
+				padding: 30px 0;
+				overflow: hidden;
+				position: relative;
+				.btnLeft {
+					width: 70px;
+					height: 70px;
+					background: white;
+					position: absolute;
+					top: 40%;
+					left: -35px;
+					transform: rotate(45deg); 
+					.lnr-chevron-left {
+						line-height: 50px;
+						margin-left: 40px;
+						transform: rotate(45deg);
+					}
+				}
+				.btnRight {
+					width: 70px;
+					height: 70px;
+					background: white;
+					position: absolute;
+					top: 40%;
+					right: -35px;
+					transform: rotate(45deg);
+					.lnr{
+						line-height: 50px;
+						margin-right: 40px;
+						transform: rotate(45deg)
+					}
+				}
+				.sliderBtn1 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 48%;
+					display: inline-block;
+				}
+				.sliderBtn2 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 50%;
+					display: inline-block;
+				}
+				.sliderBtn3 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 52%;
+					display: inline-block;
+				}
+				object {
+					width: 100%;
+					height: 400px;
+				}
+			}
+			span {
+				font-size: 1.2em;
+				line-height: 30px;
+			}
+			button {
+				margin: 30px 0 80px 0; 
+				padding: 13px 20px;
+				background:none;
+				border:2px solid $myColor;
+				outline: none;
+				color: $myColor;
+				font-weight: bold;
+				transition: $transition;
+				letter-spacing: 1px;
+					&:hover{
+						background:$myColor;
+						color: white;
+
+					}
+			}
+		
+		}
+		
+	}
+
+	.mediaGalleryRight {
+		float: right;
+		padding: 20px 0;
+		@media screen and (min-width: 767px) and (max-width: 992px) {
+		    width: 100%;
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px) {
+		    width: 75%; 
+		}
+		@media screen and (min-width: 1200px) {
+		   width: 75%;	 
+		}
+		.gallerySearch {
+			background: #F5F6F7;
+			padding: 10px;
+			input {
+				width: 80%;
+				border: none;
+				outline: none;
+				background: #F5F6F7;
+			}
+			span {
+				float: right;
+			}
+		}
+		.mediaGalleryRightPosts {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 20px;
+					border-bottom: 1px dotted lightgray;
+					span {
+						vertical-align: top;
+						display: inline-block;
+					}
+					div {
+						width: 88%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+						p {
+							font-size: 0.9em;
+							line-height: 40px;
+							color: darkgray;
+						}
+					}
+				}
+			}
+		}
+
+		.mediaGalleryRightComments {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding: 20px 0;
+					border-bottom: 1px dotted lightgray;
+					i {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						p {
+							color: darkgray;
+						}
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+		.mediaGalleryRightCategories {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 10px;
+					span {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.mediaGalleryRightTags {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					border: 1px solid lightgray;
+					display: inline-block;
+					margin-bottom: 4px;
+					transition: $transition;
+					padding: 10px;
+					a {
+						color: gray;
+						transition: $transition; 
+						h4 {
+							margin: 0;
+							font-size: 1.15em;
+							letter-spacing: 1px;
+						}
+						&:hover {
+							text-decoration: none;
+							color: $myColor;
+						}
+					}
+					&:hover {
+						border-color: $myColor;
+					}
+				}
+			}
+		}	
+		
+
+		.mediaGalleryRightArchive {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 10px;
+					span {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+	
 }
 
 #sign {
 	width: 100%;
-	position: relative;
 	background:#323a45;
 	padding:40px 0;
 
-	.topBtn {
-		width: 50px;
-		height: 50px;
-		background: white;
-		position: absolute;
-		top: -25px;	
-		left: 48%;
-		box-shadow: 0px 0px 7px lightgray;
-		border-radius: 50%;
-		margin: 0 auto;
-
-		&:hover {
-			text-decoration: none;
-		}
-
-		span {
-			line-height: 50px;
-		}
-	}
-
 	.container{
+		position: relative;
+
+		.topBtn {
+			width: 50px;
+			height: 50px;
+			background: white;
+			position: absolute;
+			top: -65px;	
+			left: 45%;
+			box-shadow: 0px 0px 8px darkgray;
+			border-radius: 50%;
+			margin: 0 auto;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			span {
+				line-height: 50px;
+			}
+		}
 
 		h2 {
 			color:white;
@@ -211,7 +588,6 @@ body {
 			outline: none;
 			border:none;
 			padding-left:8px;
-
 		}
 		
 			.col-md-4 {
