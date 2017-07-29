@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -51,6 +49,11 @@ body {
   #header .navbarSection {
     padding-bottom: 0px;
     padding-top: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  #header .navbarSection {
+    height: 110px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 992px) {
@@ -134,7 +137,20 @@ body {
   border: 2px solid #53B778;
 }
 
+#blog {
+  width: 100%;
+  height: 2000px;
+  background: #323A45;
+}
+
+#service {
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+
 #sign {
+  width: 100%;
   position: relative;
   background: #323a45;
   padding: 40px 0;
@@ -145,9 +161,9 @@ body {
   background: white;
   position: absolute;
   top: -25px;
-  left: 49%;
   box-shadow: 0px 0px 7px lightgray;
   border-radius: 50%;
+  margin: 0 auto;
 }
 #sign .topBtn:hover {
   text-decoration: none;
@@ -200,6 +216,7 @@ body {
 }
 
 #footer {
+  width: 100%;
   padding: 50px 0;
   background: #EAEAEA;
 }

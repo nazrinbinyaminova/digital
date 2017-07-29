@@ -4,13 +4,11 @@ $transition: all .3s ease;
 
 body {
 	margin: 0;
-	width: 100vw;
-	height: 100vh;
 	font-family: 'Raleway', sans-serif;
 
 }
 #header {
-	width: $myWidthHeight;
+	width: 100%;
 	background: white;
 	font-size: 1.2em;
 
@@ -58,6 +56,10 @@ body {
 			padding-bottom: 0px;
 			padding-top: 10px;
 		}
+
+		@media screen and (min-width: 767px) {
+			height: 110px;		}
+
 		img {
 			@media screen and (min-width: 767px) and (max-width: 992px){
 				padding: 8px 0;
@@ -164,7 +166,21 @@ body {
 	}
 	
 }
+
+#blog {
+	width: 100%;
+	height: 2000px;
+	background: #323A45;
+}
+
+#service {
+	width: 100%;
+	height: 500px;
+	background: yellow;
+}
+
 #sign {
+	width: 100%;
 	position: relative;
 	background:#323a45;
 	padding:40px 0;
@@ -175,9 +191,9 @@ body {
 		background: white;
 		position: absolute;
 		top: -25px;	
-		left: 49%;
 		box-shadow: 0px 0px 7px lightgray;
 		border-radius: 50%;
+		margin: 0 auto;
 
 		&:hover {
 			text-decoration: none;
@@ -246,6 +262,7 @@ body {
 }
 
 #footer {
+	width: 100%;
 	padding: 50px 0;
 	background: #EAEAEA;
 	

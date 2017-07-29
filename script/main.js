@@ -1,4 +1,4 @@
-$(window).ready(function() {
+$(document).ready(function() {
 	$(".dropBtn").hide();
 	count=true;
 	$("#listBtn").click(function(event) {
@@ -17,10 +17,10 @@ $(window).ready(function() {
 	});
 });
 
-$(window).ready(function(){
-	$(".topBtn").click(function() {
-		$(window).animate({
+$(document).ready(function(){
+	$(".topBtn").click(function(){
+		$("body").animate({
 			scrollTop: 0,
-		}, 1000);
+		}, 2000);
 	});
 })
