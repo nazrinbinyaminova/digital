@@ -6,6 +6,11 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 }
+
+.clear {
+	clear:both;
+}
+
 #header {
 	width: 100%;
 	background: white;
@@ -343,6 +348,7 @@ body {
 				h4 {
 					float: left;
 					padding-right: 10px;
+					font-weight: bold;
 				}
 				.socialIcon {
 					padding: 5px 10px;
@@ -366,6 +372,81 @@ body {
 						 	}
 					 	}
 					}
+				}
+			}
+		}
+		.authorDetails {
+			.authorImg {
+				width: 16%;
+				float: left;
+				line-height: 110px;
+			}
+			.authorAbout {
+				width: 84%;
+				float: left;
+				line-height: 25px;
+				p {
+					font-size: 1.15em;
+				}
+				h4 {
+					font-weight: bold;
+				}
+			}
+			a {
+				color: $myColor;
+				h2{
+					font-weight: bold;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.comments {
+			padding: 80px 0;
+			a {
+				color: $myColor;
+				h2{
+					font-weight: bold;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.commentsInput {
+				width: 100%;
+				padding: 30px 0 15px 0;
+				border-bottom: 2px solid lightgray;
+				transition: $transition;
+				span {
+					padding-right: 5px;
+					font-size: 1.2em;
+				}
+				input {
+					width: 92%;
+					border: none;
+					outline: none;
+				}
+				textarea {
+					width: 92%;
+					border:none;
+					outline: none;
+				}
+			}
+			button {
+				padding: 10px 15px;
+				background: $myColor;
+				color: white;
+				border: 2px solid $myColor;
+				transition: $transition;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-top: 50px;
+
+				&:hover {
+					background: white;
+					color: $myColor;
+					border: 2px solid $myColor;
 				}
 			}
 		}

@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif; }
 
+.clear {
+  clear: both; }
+
 #header {
   width: 100%;
   background: white;
@@ -245,7 +248,8 @@ body {
     padding: 20px 0 60px 0; }
     #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .sharePost h4 {
       float: left;
-      padding-right: 10px; }
+      padding-right: 10px;
+      font-weight: bold; }
     #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .sharePost .socialIcon {
       padding: 5px 10px; }
       #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .sharePost .socialIcon li {
@@ -264,6 +268,61 @@ body {
           #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .sharePost .socialIcon li a:hover {
             color: white;
             background: #53B778; }
+  #mediaGallery .mediaGalleryLeft .authorDetails .authorImg {
+    width: 16%;
+    float: left;
+    line-height: 110px; }
+  #mediaGallery .mediaGalleryLeft .authorDetails .authorAbout {
+    width: 84%;
+    float: left;
+    line-height: 25px; }
+    #mediaGallery .mediaGalleryLeft .authorDetails .authorAbout p {
+      font-size: 1.15em; }
+    #mediaGallery .mediaGalleryLeft .authorDetails .authorAbout h4 {
+      font-weight: bold; }
+  #mediaGallery .mediaGalleryLeft .authorDetails a {
+    color: #53B778; }
+    #mediaGallery .mediaGalleryLeft .authorDetails a h2 {
+      font-weight: bold; }
+    #mediaGallery .mediaGalleryLeft .authorDetails a:hover {
+      text-decoration: none; }
+  #mediaGallery .mediaGalleryLeft .comments {
+    padding: 80px 0; }
+    #mediaGallery .mediaGalleryLeft .comments a {
+      color: #53B778; }
+      #mediaGallery .mediaGalleryLeft .comments a h2 {
+        font-weight: bold; }
+      #mediaGallery .mediaGalleryLeft .comments a:hover {
+        text-decoration: none; }
+    #mediaGallery .mediaGalleryLeft .comments .commentsInput {
+      width: 100%;
+      padding: 30px 0 15px 0;
+      border-bottom: 2px solid lightgray;
+      transition: all 0.3s ease; }
+      #mediaGallery .mediaGalleryLeft .comments .commentsInput span {
+        padding-right: 5px;
+        font-size: 1.2em; }
+      #mediaGallery .mediaGalleryLeft .comments .commentsInput input {
+        width: 92%;
+        border: none;
+        outline: none; }
+      #mediaGallery .mediaGalleryLeft .comments .commentsInput textarea {
+        width: 92%;
+        border: none;
+        outline: none; }
+    #mediaGallery .mediaGalleryLeft .comments button {
+      padding: 10px 15px;
+      background: #53B778;
+      color: white;
+      border: 2px solid #53B778;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 50px; }
+      #mediaGallery .mediaGalleryLeft .comments button:hover {
+        background: white;
+        color: #53B778;
+        border: 2px solid #53B778; }
   #mediaGallery .mediaGalleryRight {
     float: right;
     padding: 20px 0; }

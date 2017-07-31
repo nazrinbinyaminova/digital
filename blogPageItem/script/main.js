@@ -77,4 +77,9 @@ $(document).ready(function(){
 		$(".pageBtn li").css("text-decoration","none");
 		$(this).css("background","lightgray");
 	});
+
+	$(".commentsInput").click(function(){
+		$(".commentsInput").css("border-color", "lightgray")
+		$(this).css("border-color", "#53B778")
+	})
 })
