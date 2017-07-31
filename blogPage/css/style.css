@@ -171,7 +171,7 @@ body {
 #mediaGallery {
   width: 100%;
   background: white;
-  padding: 60px 0;
+  padding: 80px 0;
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem a {
   color: #323A45;
@@ -207,34 +207,69 @@ body {
   padding: 30px 0;
   overflow: hidden;
   position: relative;
+  z-index: 4;
+  height: 400px;
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .gallerySlider {
+  width: 3000px;
+  position: absolute;
+  left: 0;
+  transition: all .7s ease;
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .gallerySlider img {
+  float: left;
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg:hover .btnLeft {
+  left: -35px;
+  background: white;
+  color: black;
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg:hover .btnRight {
+  right: -35px;
+  background: white;
+  color: black;
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnLeft {
   width: 70px;
   height: 70px;
-  background: white;
+  background: rgba(255, 255, 255, 0);
+  color: transparent;
   position: absolute;
   top: 40%;
-  left: -35px;
+  left: -55px;
+  z-index: 5;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
-#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnLeft .lnr-chevron-left {
-  line-height: 50px;
-  margin-left: 40px;
-  transform: rotate(45deg);
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnLeft:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnLeft i {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: rotate(-45deg);
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnRight {
   width: 70px;
   height: 70px;
-  background: white;
+  background: rgba(255, 255, 255, 0);
+  color: transparent;
   position: absolute;
   top: 40%;
-  right: -35px;
+  right: -55px;
+  z-index: 5;
   transform: rotate(45deg);
+  transition: all 0.3s ease;
 }
-#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnRight .lnr {
-  line-height: 50px;
-  margin-right: 40px;
-  transform: rotate(45deg);
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnRight:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .btnRight i {
+  position: absolute;
+  top: 45%;
+  right: 50%;
+  transform: rotate(-45deg);
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .sliderBtn1 {
   width: 8px;
@@ -255,6 +290,7 @@ body {
   bottom: 60px;
   left: 50%;
   display: inline-block;
+  background: white;
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg .sliderBtn3 {
   width: 8px;
@@ -265,6 +301,7 @@ body {
   bottom: 60px;
   left: 52%;
   display: inline-block;
+  background: white;
 }
 #mediaGallery .mediaGalleryLeft .mediaGalleryLeftItem .galleryImg object {
   width: 100%;
@@ -516,6 +553,30 @@ body {
   text-decoration: none;
   color: #53B778;
 }
+#mediaGallery .pageBtn ul {
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+#mediaGallery .pageBtn ul a {
+  width: 100%;
+  height: 100%;
+  color: gray;
+}
+#mediaGallery .pageBtn ul a li {
+  width: 40px;
+  padding: 8px 0;
+  border: 1px solid lightgray;
+  float: left;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+#mediaGallery .pageBtn ul a li:hover {
+  background: lightgray;
+}
+#mediaGallery .pageBtn ul a:hover {
+  text-decoration: none;
+}
 
 #sign {
   width: 100%;
@@ -530,6 +591,7 @@ body {
   height: 50px;
   background: white;
   position: absolute;
+  text-decoration: none;
   top: -65px;
   left: 45%;
   box-shadow: 0px 0px 8px darkgray;
