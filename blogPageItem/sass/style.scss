@@ -225,9 +225,10 @@ body {
 					margin-right: 20px;
 					a {
 						color: gray;
-						font-size: 0.9em;
+						font-size: 1.1em;
 						letter-spacing: 1px;
 						text-decoration: none;
+						line-height: 30px;
 						&:hover {
 							color: $myColor;
 						}
@@ -241,11 +242,11 @@ body {
 				z-index: 4;
 				height: 400px;
 				.gallerySlider{
-					width: 3000px;
+					width: 2340px;
 					position: absolute;
 					left: 0;
 					transition: all .7s ease;
-					img{
+					img {
 					float: left;
 				}
 				}
@@ -377,12 +378,10 @@ body {
 		}
 		.authorDetails {
 			.authorImg {
-				width: 16%;
 				float: left;
 				line-height: 110px;
 			}
 			.authorAbout {
-				width: 84%;
 				float: left;
 				line-height: 25px;
 				p {
@@ -392,11 +391,12 @@ body {
 					font-weight: bold;
 				}
 			}
+			h2 {
+				font-weight: bold;
+				color: $myColor;
+				}
 			a {
 				color: $myColor;
-				h2{
-					font-weight: bold;
-				}
 				&:hover {
 					text-decoration: none;
 				}
@@ -404,31 +404,26 @@ body {
 		}
 		.comments {
 			padding: 80px 0;
-			a {
+			h2 {
+				font-weight: bold;
 				color: $myColor;
-				h2{
-					font-weight: bold;
 				}
-				&:hover {
-					text-decoration: none;
-				}
-			}
 			.commentsInput {
 				width: 100%;
 				padding: 30px 0 15px 0;
 				border-bottom: 2px solid lightgray;
 				transition: $transition;
 				span {
-					padding-right: 5px;
+					width: 10%;
 					font-size: 1.2em;
 				}
 				input {
-					width: 92%;
+					width: 90%;
 					border: none;
 					outline: none;
 				}
 				textarea {
-					width: 92%;
+					width: 90%;
 					border:none;
 					outline: none;
 				}
@@ -447,6 +442,44 @@ body {
 					background: white;
 					color: $myColor;
 					border: 2px solid $myColor;
+				}
+			}
+		}
+		.posts {
+			h2 {
+				font-weight: bold;
+				color: $myColor;
+			}
+			.postsItem {
+				padding-top: 40px;
+				overflow: hidden;
+				img {
+					width: 100%;
+				}
+			}
+			.postsBox{
+				background: #F5F6F7;
+				.postsImg {
+					width: 100%;
+				}
+
+				.postsAbout {
+					margin: auto;
+					line-height: 30px;
+					padding: 30px;
+					a {
+						color: #323A45;
+						h3 {
+							font-weight: bold;	
+						}
+						&:hover {
+							text-decoration: none;
+							color: $myColor;
+						}
+					}
+					p {
+						font-size: 1.2em;
+					}
 				}
 			}
 		}
@@ -695,7 +728,7 @@ body {
 			position: absolute;
 			text-decoration: none;
 			top: -65px;	
-			left: 45%;
+			left: 48%;
 			box-shadow: 0px 0px 8px darkgray;
 			border-radius: 50%;
 			margin: 0 auto;
