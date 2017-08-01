@@ -1,0 +1,844 @@
+$myWidthHeight: 100%;
+$myColor: #53B778;
+$transition: all .3s ease;
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.clear {
+	clear:both;
+}
+
+#header {
+	width: 100%;
+	background: white;
+	font-size: 1.2em;
+
+	.container {
+		padding: 0 20px;
+	}
+
+	.headerSearch {
+		padding: 10px 0;
+		input {
+			border: none;
+			outline: none;
+		}
+
+	}
+
+	.headerPhone {
+		padding-left: 20px;
+		@media screen and (min-width: 767px){
+   			 	float: right;
+		}
+
+		@media screen and (max-width: 767px){
+   			 	float: left;
+		}
+
+		a {
+			color: #606473;
+			&:hover {
+				text-decoration: none;
+				color: $myColor;
+			}
+		}
+
+		img {
+			padding: 0 20px;
+			}
+	
+	}
+
+	.navbarSection {
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0px;
+			padding-top: 10px;
+		}
+
+		@media screen and (min-width: 767px) {
+			height: 110px;		}
+
+		img {
+			@media screen and (min-width: 767px) and (max-width: 992px){
+				padding: 8px 0;
+		}
+			@media screen and (max-width: 767px){
+				padding: 8px 20px;
+			}
+		}
+		@media screen and (min-width: 767px) and (max-width: 992px){
+			ul li {
+				font-size: 0.9em;
+				padding-left: 15px;
+			}
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px){
+			ul li {
+				padding-left: 30px;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			ul li {
+				padding-left: 50px;
+			}	
+		}
+		.navbar-header{
+			span{
+				font-size: 30px;
+				font-weight: 900;
+				padding:20px;
+			}
+		
+		}
+		width: $myWidthHeight;
+		padding: 30px 0;
+
+		ul {
+			li {
+				display: inline-block;
+				a {
+					padding: 15px 0 10px 0;
+					border-bottom: 0px solid $myColor;
+					color: #606473;
+					transition: $transition;
+					.active {
+						border-bottom: 2px solid $myColor;
+					}
+
+					&:hover {
+						background: none;
+						color: #7D7D7D;
+						border-bottom: 2px solid $myColor;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+
+	}
+	.dropBtn {
+		ul {
+			li {
+				
+				a {
+					padding: 10px 0 10px 20px;
+					color: #606473;
+					transition: $transition;
+					border-bottom: 1px solid $myColor;
+
+					&:hover {
+						background: $myColor;
+						color: white;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+					margin-top: 20px;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+
+	}
+	
+}
+
+#blog {
+	width: 100%;
+	height: 150px;
+	background: #323A45;
+	color: white;
+
+	h1 {
+		@media screen and (min-width: 767px) and (max-width: 992px) {
+		    font-size: 2em;
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px) {
+		    font-size: 3em;  
+		}
+		@media screen and (min-width: 1200px) {
+		   font-size: 4em;		 
+		}
+
+		font-weight: bold;
+		line-height: 150px;
+		margin: 0;
+		padding-left: 5px;
+	}
+}
+
+#mediaGallery {
+	width: 100%;
+	background: white;
+	padding: 80px 0;
+
+	.mediaGalleryLeft {
+		.mediaGalleryLeftItem {
+			a {
+				color: #323A45;
+				transition: $transition;
+				&:hover {
+					text-decoration: none;
+					color: $myColor;
+				}
+				h2 {
+					font-weight: bold;
+				}
+			}
+			
+			.mediaPost {
+				padding: 0;
+				margin: 0;
+				border-top: 1px solid lightgray;
+				li {
+					list-style: none;
+					display: inline-block;
+					margin-right: 20px;
+					a {
+						color: gray;
+						font-size: 1.1em;
+						letter-spacing: 1px;
+						text-decoration: none;
+						line-height: 30px;
+						&:hover {
+							color: $myColor;
+						}
+					}
+				}
+			}
+			.galleryImg {
+				padding: 30px 0;
+				overflow: hidden;
+				position: relative;
+				z-index: 4;
+				height: 400px;
+				.gallerySlider{
+					width: 2340px;
+					position: absolute;
+					left: 0;
+					transition: all .7s ease;
+					img {
+					float: left;
+				}
+				}
+				&:hover .btnLeft {
+					left: -35px;
+					background: rgba(255,255,255,1);
+					color: rgba(0,0,0,1);
+				}
+				&:hover .btnRight {
+					right: -35px;
+					background: rgba(255,255,255,1);
+					color: rgba(0,0,0,1)
+				}
+				.btnLeft {
+					width: 70px;
+					height: 70px;
+					background: rgba(255,255,255,0);
+					color: rgba(0,0,0,0);
+					position: absolute;
+					top: 40%;
+					left: -55px;
+					z-index: 5;
+					transform: rotate(45deg); 
+					transition: $transition;
+					&:hover {
+						background: rgba(255,255,255,0.8)
+					}
+					i {
+						position: absolute;
+						top: 15%;
+						left: 50%;
+						transform: rotate(-45deg);
+					}
+				}
+				.btnRight {
+					width: 70px;
+					height: 70px;
+					background: rgba(255,255,255,0);
+					color: rgba(0,0,0,0);
+					position: absolute;
+					top: 40%;
+					right: -55px;
+					z-index: 5;
+					transform: rotate(45deg);
+					transition: $transition;
+					&:hover {
+						background: rgba(255,255,255,0.8)
+					}
+					i {
+						position: absolute;
+						top: 45%;
+						right: 50%;
+						transform: rotate(-45deg)
+					}
+				}
+				.sliderBtn1 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 48%;
+					display: inline-block;
+				}
+				.sliderBtn2 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 50%;
+					display: inline-block;
+					background: white;
+				}
+				.sliderBtn3 {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					border: 1px solid white;
+					position: absolute;
+					bottom: 60px;
+					left: 52%;
+					display: inline-block;
+					background: white;
+				}
+				object {
+					width: 100%;
+					height: 400px;
+				}
+			}
+			p {
+				padding-top: 10px;
+				font-size: 1.2em;
+				line-height: 30px;
+			}
+			.sharePost {
+				padding: 20px 0 60px 0;
+				h4 {
+					float: left;
+					padding-right: 10px;
+					font-weight: bold;
+				}
+				.socialIcon {
+					padding: 5px 10px;
+					li {
+						list-style: none;
+						a {
+							margin-right: 10px;
+							width: 30px;
+							height: 30px;
+							background: lightgray;
+							border-radius: 50px;
+							float: left;
+							color: white;
+							font-size: 1.2em;
+							transition: $transition;
+							line-height: 30px;
+							
+						 	&:hover {
+						 		color: white;
+						 		background: $myColor;
+						 	}
+					 	}
+					}
+				}
+			}
+		}
+		.authorDetails {
+			.authorImg {
+				float: left;
+				line-height: 110px;
+			}
+			.authorAbout {
+				float: left;
+				line-height: 25px;
+				p {
+					font-size: 1.15em;
+				}
+				h4 {
+					font-weight: bold;
+				}
+			}
+			h2 {
+				font-weight: bold;
+				color: $myColor;
+				}
+			a {
+				color: $myColor;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.comments {
+			padding: 80px 0;
+			h2 {
+				font-weight: bold;
+				color: $myColor;
+				}
+			.commentsInput {
+				width: 100%;
+				padding: 30px 0 15px 0;
+				border-bottom: 2px solid lightgray;
+				transition: $transition;
+				span {
+					width: 10%;
+					font-size: 1.2em;
+				}
+				input {
+					width: 90%;
+					border: none;
+					outline: none;
+				}
+				textarea {
+					width: 90%;
+					border:none;
+					outline: none;
+				}
+			}
+			button {
+				padding: 10px 15px;
+				background: $myColor;
+				color: white;
+				border: 2px solid $myColor;
+				transition: $transition;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-top: 50px;
+
+				&:hover {
+					background: white;
+					color: $myColor;
+					border: 2px solid $myColor;
+				}
+			}
+		}
+		.posts {
+			h2 {
+				font-weight: bold;
+				color: $myColor;
+			}
+			.postsItem {
+				padding-top: 40px;
+				overflow: hidden;
+				img {
+					width: 100%;
+				}
+			}
+			.postsBox{
+				background: #F5F6F7;
+				.postsAbout {
+					margin: auto;
+					line-height: 30px;
+					padding: 30px;
+					a {
+						color: #323A45;
+						h3 {
+							font-weight: bold;	
+						}
+						&:hover {
+							text-decoration: none;
+							color: $myColor;
+						}
+					}
+					p {
+						font-size: 1.2em;
+					}
+				}
+			}
+		}
+	}
+
+	.mediaGalleryRight {
+		float: right;
+		padding: 20px 0;
+		@media screen and (min-width: 767px) and (max-width: 992px) {
+		    width: 100%;
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px) {
+		    width: 75%; 
+		}
+		@media screen and (min-width: 1200px) {
+		   width: 75%;	 
+		}
+		.gallerySearch {
+			background: #F5F6F7;
+			padding: 10px;
+			input {
+				width: 80%;
+				border: none;
+				outline: none;
+				background: #F5F6F7;
+			}
+			span {
+				float: right;
+			}
+		}
+		.mediaGalleryRightPosts {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 20px;
+					border-bottom: 1px dotted lightgray;
+					span {
+						vertical-align: top;
+						display: inline-block;
+					}
+					div {
+						width: 88%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+						p {
+							font-size: 0.9em;
+							line-height: 40px;
+							color: darkgray;
+						}
+					}
+				}
+			}
+		}
+
+		.mediaGalleryRightComments {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding: 20px 0;
+					border-bottom: 1px dotted lightgray;
+					i {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						p {
+							color: darkgray;
+						}
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+		.mediaGalleryRightCategories {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 10px;
+					span {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.mediaGalleryRightTags {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					border: 1px solid lightgray;
+					display: inline-block;
+					margin-bottom: 4px;
+					transition: $transition;
+					padding: 10px;
+					a {
+						color: gray;
+						transition: $transition; 
+						h4 {
+							margin: 0;
+							font-size: 1.15em;
+							letter-spacing: 1px;
+						}
+						&:hover {
+							text-decoration: none;
+							color: $myColor;
+						}
+					}
+					&:hover {
+						border-color: $myColor;
+					}
+				}
+			}
+		}	
+		
+
+		.mediaGalleryRightArchive {
+			padding-top: 35px;
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 10px;
+					span {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+						a {
+							color: gray;
+							transition: $transition; 
+							h4 {
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+							&:hover {
+								text-decoration: none;
+								color: $myColor;
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+#sign {
+	width: 100%;
+	background:#323a45;
+	padding:40px 0;
+
+	.container{
+		position: relative;
+
+		.topBtn {
+			width: 50px;
+			height: 50px;
+			background: white;
+			position: absolute;
+			text-decoration: none;
+			top: -65px;	
+			left: 48%;
+			box-shadow: 0px 0px 8px darkgray;
+			border-radius: 50%;
+			margin: 0 auto;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			span {
+				line-height: 50px;
+			}
+		}
+
+		h2 {
+			color:white;
+			margin-bottom:40px;
+		}
+		input {
+			width: 90%;
+			height: 40px;
+			outline: none;
+			border:none;
+			padding-left:8px;
+		}
+		
+			.col-md-4 {
+				div {
+				padding:5px;
+				background:white;
+				margin-bottom:20px;
+
+					input {
+						width: 90%;
+						height: 40px;
+						outline: none;
+						border:none;
+						padding-left:8px;
+					}
+					span{
+						font-size: 17px;
+					}
+					
+					}
+				
+				.signBtn{
+					width: 100%;
+					height: 50px;
+					background:$myColor;
+					border:2px solid $myColor;
+					outline: none;
+					color: white;
+					font-weight: bold;
+					transition: $transition;
+						&:hover{
+							background:none;
+							color: $myColor;
+
+						}
+					}
+			}
+		
+		}
+	h4{
+		margin-top:40px
+	}
+}
+
+#footer {
+	width: 100%;
+	padding: 50px 0;
+	background: #EAEAEA;
+	
+	img {
+		padding: 10px 0;
+	}
+
+	h4 {
+		color: #787878;
+	}
+
+	ul {
+		padding: 0;
+		li {
+			list-style-type: none;
+			line-height: 30px;
+			color: #B6B6B6;
+			a {
+				color: #B6B6B6;
+				&:hover {
+					text-decoration: none;
+					color: $myColor;
+				}
+			}
+		}
+	}
+	.socialIcon {
+		li {
+			
+			a {
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+				background: lightgray;
+				border-radius: 50px;
+				float: left;
+				color: white;
+				font-size: 1.2em;
+				transition: $transition;
+				
+			 		&:hover {
+			 			color: white;
+			 			background: $myColor;
+			 		}
+		 	}
+		}
+	}
+}

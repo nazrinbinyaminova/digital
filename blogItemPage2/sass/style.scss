@@ -241,99 +241,6 @@ body {
 				position: relative;
 				z-index: 4;
 				height: 400px;
-				.gallerySlider{
-					width: 2340px;
-					position: absolute;
-					left: 0;
-					transition: all .7s ease;
-					img {
-					float: left;
-				}
-				}
-				&:hover .btnLeft {
-					left: -35px;
-					background: rgba(255,255,255,1);
-					color: rgba(0,0,0,1);
-				}
-				&:hover .btnRight {
-					right: -35px;
-					background: rgba(255,255,255,1);
-					color: rgba(0,0,0,1)
-				}
-				.btnLeft {
-					width: 70px;
-					height: 70px;
-					background: rgba(255,255,255,0);
-					color: rgba(0,0,0,0);
-					position: absolute;
-					top: 40%;
-					left: -55px;
-					z-index: 5;
-					transform: rotate(45deg); 
-					transition: $transition;
-					&:hover {
-						background: rgba(255,255,255,0.8)
-					}
-					i {
-						position: absolute;
-						top: 15%;
-						left: 50%;
-						transform: rotate(-45deg);
-					}
-				}
-				.btnRight {
-					width: 70px;
-					height: 70px;
-					background: rgba(255,255,255,0);
-					color: rgba(0,0,0,0);
-					position: absolute;
-					top: 40%;
-					right: -55px;
-					z-index: 5;
-					transform: rotate(45deg);
-					transition: $transition;
-					&:hover {
-						background: rgba(255,255,255,0.8)
-					}
-					i {
-						position: absolute;
-						top: 45%;
-						right: 50%;
-						transform: rotate(-45deg)
-					}
-				}
-				.sliderBtn1 {
-					width: 8px;
-					height: 8px;
-					border-radius: 50%;
-					border: 1px solid white;
-					position: absolute;
-					bottom: 60px;
-					left: 48%;
-					display: inline-block;
-				}
-				.sliderBtn2 {
-					width: 8px;
-					height: 8px;
-					border-radius: 50%;
-					border: 1px solid white;
-					position: absolute;
-					bottom: 60px;
-					left: 50%;
-					display: inline-block;
-					background: white;
-				}
-				.sliderBtn3 {
-					width: 8px;
-					height: 8px;
-					border-radius: 50%;
-					border: 1px solid white;
-					position: absolute;
-					bottom: 60px;
-					left: 52%;
-					display: inline-block;
-					background: white;
-				}
 				object {
 					width: 100%;
 					height: 400px;
@@ -459,10 +366,6 @@ body {
 			}
 			.postsBox{
 				background: #F5F6F7;
-				.postsImg {
-					width: 100%;
-				}
-
 				.postsAbout {
 					margin: auto;
 					line-height: 30px;

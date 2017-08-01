@@ -1,0 +1,430 @@
+$myWidthHeight: 100%;
+$myColor: #53B778;
+$transition: all .3s ease;
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.clear {
+	clear:both;
+}
+
+#header {
+	width: 100%;
+	background: white;
+	font-size: 1.2em;
+
+	.container {
+		padding: 0 20px;
+	}
+
+	.headerSearch {
+		padding: 10px 0;
+		input {
+			border: none;
+			outline: none;
+		}
+
+	}
+
+	.headerPhone {
+		padding-left: 20px;
+		@media screen and (min-width: 767px){
+   			 	float: right;
+		}
+
+		@media screen and (max-width: 767px){
+   			 	float: left;
+		}
+
+		a {
+			color: #606473;
+			&:hover {
+				text-decoration: none;
+				color: $myColor;
+			}
+		}
+
+		img {
+			padding: 0 20px;
+			}
+	
+	}
+
+	.navbarSection {
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0px;
+			padding-top: 10px;
+		}
+
+		@media screen and (min-width: 767px) {
+			height: 110px;		}
+
+		img {
+			@media screen and (min-width: 767px) and (max-width: 992px){
+				padding: 8px 0;
+		}
+			@media screen and (max-width: 767px){
+				padding: 8px 20px;
+			}
+		}
+		@media screen and (min-width: 767px) and (max-width: 992px){
+			ul li {
+				font-size: 0.9em;
+				padding-left: 15px;
+			}
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px){
+			ul li {
+				padding-left: 30px;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			ul li {
+				padding-left: 50px;
+			}	
+		}
+		.navbar-header{
+			span{
+				font-size: 30px;
+				font-weight: 900;
+				padding:20px;
+			}
+		
+		}
+		width: $myWidthHeight;
+		padding: 30px 0;
+
+		ul {
+			li {
+				display: inline-block;
+				a {
+					padding: 15px 0 10px 0;
+					border-bottom: 0px solid $myColor;
+					color: #606473;
+					transition: $transition;
+					.active {
+						border-bottom: 2px solid $myColor;
+					}
+
+					&:hover {
+						background: none;
+						color: #7D7D7D;
+						border-bottom: 2px solid $myColor;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+
+	}
+	.dropBtn {
+		ul {
+			li {
+				
+				a {
+					padding: 10px 0 10px 20px;
+					color: #606473;
+					transition: $transition;
+					border-bottom: 1px solid $myColor;
+
+					&:hover {
+						background: $myColor;
+						color: white;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+					margin-top: 20px;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+
+	}
+	
+}
+
+#caseStudies {
+	width: 100%;
+	background: #323A45 url(../image/case/case-studies-details-banner.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+	color: white;
+	letter-spacing: 1px;
+	.row {
+		div {
+			padding: 100px 0;
+			@media screen and (max-width: 767px) {
+			    padding: 80px 20px;
+			}
+			h4 {
+				line-height: 25px;
+				font-weight: bold;
+			}
+			h1 {
+				@media screen and (min-width: 767px) and (max-width: 992px) {
+				    font-size: 2em;
+				}
+				@media screen and (min-width: 992px) and (max-width: 1200px) {
+				    font-size: 3em;  
+				}
+				@media screen and (min-width: 1200px) {
+				   font-size: 4.2em;		 
+				}
+
+				font-weight: bold;
+				margin: 0;
+				margin-bottom: 30px;
+			}
+			button {
+				padding: 15px 20px;
+				background: none;
+				color: white;
+				border: 2px solid $myColor;
+				transition: $transition;
+				margin-top: 20px;
+				font-weight: bold;
+				letter-spacing: 1px;
+
+				&:hover {
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+				}
+			}
+		}
+	}	
+}
+
+#news {
+	padding: 50px 0;
+	.row {
+		margin: 0 -30px;
+	}
+	.newsItem {
+		margin: 40px 0;
+		border: 1px solid lightgray;
+		.newsItemImg {
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		.newsItemAbout {
+			padding: 30px;
+			span {
+				font-size: 0.8em;
+			}
+			p {
+				font-size: 1.2em;
+				line-height: 25px;
+			}
+			button {
+					padding: 10px 20px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+					margin-top: 20px;
+					font-weight: bold;
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+		}
+	}
+	.pageBtn {
+		padding: 30px 0 70px 0;
+		ul {
+			padding: 0;
+			list-style: none;
+			font-family: sans-serif;
+		
+			a {
+				width: 100%;
+				height: 100%;
+				color: gray;
+					li {
+						width: 40px;
+						padding: 8px 0;
+						border: 1px solid lightgray;
+						float: left;
+						text-align: center;
+						transition: $transition;
+				
+						&:hover {
+							background: lightgray;
+						}
+					}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}	
+}
+
+#sign {
+	width: 100%;
+	background:#323a45;
+	padding:40px 0;
+
+	.container{
+		position: relative;
+
+		.topBtn {
+			width: 50px;
+			height: 50px;
+			background: white;
+			position: absolute;
+			text-decoration: none;
+			top: -65px;	
+			left: 48%;
+			box-shadow: 0px 0px 8px darkgray;
+			border-radius: 50%;
+			margin: 0 auto;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			span {
+				line-height: 50px;
+			}
+		}
+
+		h2 {
+			color:white;
+			margin-bottom:40px;
+		}
+		input {
+			width: 90%;
+			height: 40px;
+			outline: none;
+			border:none;
+			padding-left:8px;
+		}
+		
+			.col-md-4 {
+				div {
+				padding:5px;
+				background:white;
+				margin-bottom:20px;
+
+					input {
+						width: 90%;
+						height: 40px;
+						outline: none;
+						border:none;
+						padding-left:8px;
+					}
+					span{
+						font-size: 17px;
+					}
+					
+					}
+				
+				.signBtn{
+					width: 100%;
+					height: 50px;
+					background:$myColor;
+					border:2px solid $myColor;
+					outline: none;
+					color: white;
+					font-weight: bold;
+					transition: $transition;
+						&:hover{
+							background:none;
+							color: $myColor;
+
+						}
+					}
+			}
+		
+		}
+	h4{
+		margin-top:40px
+	}
+}
+
+#footer {
+	width: 100%;
+	padding: 50px 0;
+	background: #EAEAEA;
+	
+	img {
+		padding: 10px 0;
+	}
+
+	h4 {
+		color: #787878;
+	}
+
+	ul {
+		padding: 0;
+		li {
+			list-style-type: none;
+			line-height: 30px;
+			color: #B6B6B6;
+			a {
+				color: #B6B6B6;
+				&:hover {
+					text-decoration: none;
+					color: $myColor;
+				}
+			}
+		}
+	}
+	.socialIcon {
+		li {
+			
+			a {
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+				background: lightgray;
+				border-radius: 50px;
+				float: left;
+				color: white;
+				font-size: 1.2em;
+				transition: $transition;
+				
+			 		&:hover {
+			 			color: white;
+			 			background: $myColor;
+			 		}
+		 	}
+		}
+	}
+}
