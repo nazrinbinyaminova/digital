@@ -204,6 +204,10 @@ body {
   width: 100%;
   padding: 50px 0;
 }
+#news h2 {
+  color: #53B778;
+  font-weight: bold;
+}
 #news .newsItem {
   margin: 40px 0;
   border: 1px solid lightgray;
@@ -253,31 +257,82 @@ body {
   border: 2px solid #53B778;
 }
 #news .pageBtn {
-  width: 200px;
-  padding: 30px 0 70px 0;
+  width: 320px;
   margin: auto;
 }
-#news .pageBtn ul {
-  padding: 0;
-  list-style: none;
-  font-family: sans-serif;
-}
-#news .pageBtn ul a {
-  color: gray;
-}
-#news .pageBtn ul a li {
-  width: 40px;
-  padding: 8px 0;
-  border: 1px solid lightgray;
-  float: left;
-  text-align: center;
+#news button {
+  padding: 12px 100px;
+  background: #53B778;
+  color: white;
+  border: 2px solid #53B778;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
-#news .pageBtn ul a li:hover {
-  background: lightgray;
+#news button:hover {
+  background: white;
+  color: #53B778;
+  border: 2px solid #53B778;
 }
-#news .pageBtn ul a:hover {
-  text-decoration: none;
+#news .newsChalleneges {
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+#news .newsChalleneges img {
+  width: 100%;
+}
+#news .newsChalleneges .newsChallenegesAbout {
+  padding: 80px 40px;
+}
+#news .newsChalleneges .newsChallenegesAbout span {
+  font-size: 1.3em;
+  line-height: 30px;
+  color: #606060;
+}
+#news .newsChalleneges ul {
+  padding: 0;
+}
+#news .newsChalleneges ul li {
+  list-style: none;
+  width: 100%;
+}
+#news .newsChalleneges ul li span {
+  width: 5%;
+  line-height: 30px;
+  font-size: 0.8em;
+  float: left;
+}
+#news .newsChalleneges ul li p {
+  width: 95%;
+  float: left;
+  font-size: 1.3em;
+  color: #606060;
+}
+#news .scoreboard {
+  padding: 30px 140px;
+  background: #323A45;
+  color: white;
+}
+#news .scoreboard .scoreboardItem {
+  line-height: 25px;
+}
+#news .scoreboard .scoreboardItem ul {
+  padding: 0;
+}
+#news .scoreboard .scoreboardItem ul li {
+  list-style: none;
+  width: 100%;
+}
+#news .scoreboard .scoreboardItem ul li span {
+  width: 10%;
+  line-height: 30px;
+  font-size: 1.7em;
+  float: left;
+  color: #53B778;
+}
+#news .scoreboard .scoreboardItem ul li p {
+  width: 90%;
+  float: left;
+  font-size: 1.7em;
 }
 
 #sign {
